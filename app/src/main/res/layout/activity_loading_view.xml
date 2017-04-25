@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示"/>
+
+        <Button
+            android:id="@+id/btn111"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="隐藏"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="测试\n测试"/>
+
+
+        <include layout="@layout/my_dialogview"></include>
+    </FrameLayout>
+
+    <!--<com.ruanmeng.project_model.MyLoadingView.views.LoadingView-->
+    <!--android:id="@+id/loadView"-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@color/white"-->
+    <!--android:visibility="gone"-->
+    <!--app:loadingText="正在拼命加载中..."/>-->
+
+</LinearLayout>

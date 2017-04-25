@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.ruanmeng.project_model.gitview.web_progress.MyProgress_WebView">
+
+
+    <com.ruanmeng.project_model.gitview.web_progress.ProgressWebView
+
+        android:id="@+id/progress_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.ruanmeng.project_model.gitview.web_progress.ProgressWebView>
+</LinearLayout>
