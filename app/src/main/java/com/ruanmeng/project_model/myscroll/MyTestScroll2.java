@@ -1,5 +1,6 @@
 package com.ruanmeng.project_model.myscroll;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -50,6 +51,7 @@ public class MyTestScroll2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CommonUtil.showToask(MyTestScroll2.this, "点击一下");
+                startActivity(new Intent(MyTestScroll2.this, MyTextScroll.class));
             }
         });
 //        layDemo02.setOnClickListener(new View.OnClickListener() {

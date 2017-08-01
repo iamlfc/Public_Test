@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.ruanmeng.project_model.R;
 import com.ruanmeng.project_model.gitview.ZoomHeadScrollview.MyTestZoomHead;
+import com.ruanmeng.project_model.gitview.badgeview.TestBadgeView;
 import com.ruanmeng.project_model.gitview.myRulerview.RulerView_Activity;
 import com.ruanmeng.project_model.gitview.mySuperTextview.MyTestTextView;
 import com.ruanmeng.project_model.gitview.mycheckbox.MyCheckBox;
@@ -39,6 +40,8 @@ public class MyGitVIew extends AppCompatActivity {
     Button btnMyTextview;
     @BindView(R.id.btn_my_zoomscroll)
     Button btnMyZoomscroll;
+    @BindView(R.id.btn_badge)
+    Button btnBadge;
 
 
     private Activity bContext;
@@ -59,7 +62,7 @@ public class MyGitVIew extends AppCompatActivity {
         CircularAnimUtil.show(btnMyFlashtv);
     }
 
-    @OnClick({R.id.btn_my_probar, R.id.btn2, R.id.btn_my_flashtv, R.id.btn_my_box, R.id.btn_my_rulerview, R.id.btn_my_pro_web, R.id.btn_my_textview, R.id.btn_my_zoomscroll})
+    @OnClick({R.id.btn_my_probar, R.id.btn2, R.id.btn_my_flashtv, R.id.btn_my_box, R.id.btn_my_rulerview, R.id.btn_my_pro_web, R.id.btn_my_textview, R.id.btn_my_zoomscroll,R.id.btn_badge})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_my_probar:
@@ -92,8 +95,9 @@ public class MyGitVIew extends AppCompatActivity {
                 break;
             case R.id.btn_my_zoomscroll:
                 startActivity(new Intent(bContext, MyTestZoomHead.class));
-
-
+                break;
+            case R.id.btn_badge:
+                startActivity(new Intent(bContext, TestBadgeView.class));
                 break;
             case R.id.btn2:
                 break;
@@ -104,12 +108,7 @@ public class MyGitVIew extends AppCompatActivity {
     @Override
     public void finish() {
         super.finish();
-
         overridePendingTransition(R.anim.shake, R.anim.trans_center_2_right);
     }
 
-
-    @OnClick(R.id.btn_my_zoomscroll)
-    public void onClick() {
-    }
 }

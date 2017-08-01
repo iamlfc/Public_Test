@@ -165,8 +165,6 @@ public class MyCityList extends AppCompatActivity {
 //         v设置适配器
         mAdapter = new CityAdapter(baseContext);
         mMySview.setAdapter(mAdapter);
-
-
 //        搜索view的监听
         mMySearchview.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

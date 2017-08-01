@@ -76,12 +76,12 @@
         "source": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_item_layout.xml",

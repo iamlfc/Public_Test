@@ -24,12 +24,12 @@
         "source": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
         "merged": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
         "merged": "E:\\demo\\as\\TextDemo\\Project_Model\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_dark.xml",

@@ -48,14 +48,14 @@ public class Text_ZoomActivity extends AppCompatActivity {
         scrollView.getPullRootView().findViewById(R.id.tv_test1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CommonUtil.showToask(basecontext,"条目一默认时间");
+                CommonUtil.showToask(basecontext, "条目一默认时间");
             }
         });
 
         scrollView.getPullRootView().findViewById(R.id.tv_test2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CommonUtil.showToask(basecontext,"条目2--3秒",5000);
+                CommonUtil.showToask(basecontext, "条目2--3秒", 5000);
             }
         });
 

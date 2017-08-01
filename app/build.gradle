@@ -108,4 +108,7 @@ dependencies {
     //65536
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
+
+//    角标提醒
+    compile 'q.rorbin:badgeview:1.1.2'
 }
