@@ -54,6 +54,7 @@ public class TestBadgeView extends BaseActivity {
 
     private void initView() {
         // TODO: 2017/8/1   布吉岛为什么  添加了 tagview之后   点击事件就不能用了    用原始的方式好像可以！
+        // TODO: 2017/8/1   向作者致敬 向开源致敬 https://github.com/qstumn/BadgeView
         // TODO: 2017/8/1     源码上写了  QBadgeView --> lien 150  中   获取 便签view的父布局  移除 该view 并新建一个  view(包含原view和 添加的角标！ 并设置 id 为 -1)  因此 onViewClicked  view.getid()不被触发！
         // TODO: 2017/8/1       targetView.setId(targetView.getId());
 //      // TODO: 2017/8/1       targetView.setId(View.NO_ID);
