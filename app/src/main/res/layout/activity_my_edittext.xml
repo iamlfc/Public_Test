@@ -40,7 +40,9 @@
         android:layout_marginTop="20dp"
         android:background="@null"
         android:hint="请输入银行卡号"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true"/>
 
     <TextView
         android:id="@+id/tv_show_money"
