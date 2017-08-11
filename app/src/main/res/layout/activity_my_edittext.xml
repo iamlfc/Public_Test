@@ -2,10 +2,10 @@
 <LinearLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
 
     android:paddingLeft="5dp"
@@ -34,13 +34,13 @@
         android:background="#8ee5ee"></TextView>
 
     <com.ruanmeng.project_model.myedittext.view.XEditText
-        android:layout_marginTop="20dp"
         android:id="@+id/edit_money"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@null"
-        android:hint="请输入银行卡号"/>
+        android:hint="请输入银行卡号"
+        android:inputType="number"/>
 
     <TextView
         android:id="@+id/tv_show_money"
@@ -55,12 +55,12 @@
         android:background="#8ee5ee"></TextView>
 
     <com.ruanmeng.project_model.myedittext.view.XEditText
-        android:layout_marginTop="20dp"
-
         android:id="@+id/edit_idcard"
 
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@null"
         android:hint="请输入身份证号"/>
 
@@ -76,30 +76,30 @@
         android:layout_height="0.5dp"
         android:background="#8ee5ee"></TextView>
 
-<com.ruanmeng.project_model.myedittext.view.AnFQNumEditText
-    android:layout_marginTop="20dp"
-    android:id="@+id/edit_autonums"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-</com.ruanmeng.project_model.myedittext.view.AnFQNumEditText>
-   <!-- <android.support.design.widget.TextInputLayout
-        android:id="@+id/til_password"
+    <com.ruanmeng.project_model.myedittext.view.AnFQNumEditText
+        android:id="@+id/edit_autonums"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/txt_lab"
-        app:errorEnabled="true"
-        app:errorTextAppearance="@style/txt_lab_msg"
-        >
-        <android.support.v7.widget.AppCompatEditText
-            android:id="@+id/acet_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="请输入密码"
-            />
+        android:layout_marginTop="20dp">
 
-    </android.support.design.widget.TextInputLayout>
--->
+    </com.ruanmeng.project_model.myedittext.view.AnFQNumEditText>
+    <!-- <android.support.design.widget.TextInputLayout
+         android:id="@+id/til_password"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:theme="@style/txt_lab"
+         app:errorEnabled="true"
+         app:errorTextAppearance="@style/txt_lab_msg"
+         >
+         <android.support.v7.widget.AppCompatEditText
+             android:id="@+id/acet_password"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="请输入密码"
+             />
+
+     </android.support.design.widget.TextInputLayout>
+ -->
     <Button
         android:id="@+id/btn_sub"
         android:layout_width="match_parent"
