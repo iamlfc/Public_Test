@@ -71,7 +71,8 @@ public class Tools {
     }
 
     public static String getRealFilePath(final Context context, final Uri uri) {
-        if (null == uri) return null;
+        if (null == uri)
+            return null;
         final String scheme = uri.getScheme();
         String data = null;
         if (scheme == null)
@@ -143,7 +144,8 @@ public class Tools {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        if (packageinfo == null) return;
+        if (packageinfo == null)
+            return;
 
         // 创建一个类别为CATEGORY_LAUNCHER的该包名的Intent
         Intent resolveIntent = new Intent(Intent.ACTION_MAIN, null);
@@ -207,10 +209,11 @@ public class Tools {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if (baos != null) try {
-                baos.close();
-            } catch (Exception e) {
-            }
+            if (baos != null)
+                try {
+                    baos.close();
+                } catch (Exception e) {
+                }
         }
         return result;
     }
@@ -235,11 +238,13 @@ public class Tools {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if (baos != null) try {
-                baos.close();
-            } catch (Exception e) {
-            }
-            if (bitmap != null) bitmap.recycle();
+            if (baos != null)
+                try {
+                    baos.close();
+                } catch (Exception e) {
+                }
+            if (bitmap != null)
+                bitmap.recycle();
         }
         return result;
     }
@@ -256,7 +261,7 @@ public class Tools {
                 Log.i("toByteArray", baos.toByteArray().length + "");
                 int options = 100;
                 //循环判断如果压缩后图片是否大于100kb,大于继续压缩
-                while ( baos.toByteArray().length / 1024 > 100) {
+                while (baos.toByteArray().length / 1024 > 100) {
                     Log.i("toByteArray", baos.toByteArray().length + "");
                     //重置baos即清空baos
                     baos.reset();
@@ -270,12 +275,14 @@ public class Tools {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if (baos != null) try {
-                baos.flush();
-                baos.close();
-            } catch (Exception e) {
-            }
-            if (bitmap != null) bitmap.recycle();
+            if (baos != null)
+                try {
+                    baos.flush();
+                    baos.close();
+                } catch (Exception e) {
+                }
+            if (bitmap != null)
+                bitmap.recycle();
         }
         return result;
     }
@@ -300,12 +307,14 @@ public class Tools {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if (baos != null) try {
-                baos.flush();
-                baos.close();
-            } catch (Exception e) {
-            }
-            if (bitmap != null) bitmap.recycle();
+            if (baos != null)
+                try {
+                    baos.flush();
+                    baos.close();
+                } catch (Exception e) {
+                }
+            if (bitmap != null)
+                bitmap.recycle();
         }
         return result;
     }
@@ -336,14 +345,16 @@ public class Tools {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } finally {
-            if (outStream != null) try {
-                outStream.close();
-            } catch (Exception e) {
-            }
-            if (inStream != null) try {
-                inStream.close();
-            } catch (Exception e) {
-            }
+            if (outStream != null)
+                try {
+                    outStream.close();
+                } catch (Exception e) {
+                }
+            if (inStream != null)
+                try {
+                    inStream.close();
+                } catch (Exception e) {
+                }
         }
         return mImage;
     }
@@ -378,7 +389,8 @@ public class Tools {
             e.printStackTrace();
             return bitmap;
         } finally {
-            if (conn != null) conn.disconnect();
+            if (conn != null)
+                conn.disconnect();
             conn = null;
         }
         return bitmap;
@@ -404,8 +416,7 @@ public class Tools {
     }
 
 
-
-   // android 验证电话号码或者固定电话 均可
+    // android 验证电话号码或者固定电话 均可
 
     public static boolean isPhoneNumberValid(String phoneNumber) {
 
@@ -419,7 +430,7 @@ public class Tools {
 
         Matcher matcher = pattern.matcher(inputStr);
 
-        if (matcher.matches() ) {
+        if (matcher.matches()) {
 
             isValid = true;
 
@@ -428,7 +439,6 @@ public class Tools {
         return isValid;
 
     }
-
 
 
     //判断email格式是否正确
@@ -488,11 +498,9 @@ public class Tools {
 //        }
 
 
-
-
-
     /**
      * 检测当的网络（WLAN、3G/2G）状态
+     *
      * @param context Context
      * @return true 表示网络可用
      */
@@ -501,11 +509,9 @@ public class Tools {
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connectivity != null) {
             NetworkInfo info = connectivity.getActiveNetworkInfo();
-            if (info != null && info.isConnected())
-            {
+            if (info != null && info.isConnected()) {
                 // 当前网络是连接的
-                if (info.getState() == NetworkInfo.State.CONNECTED)
-                {
+                if (info.getState() == NetworkInfo.State.CONNECTED) {
                     // 当前所连接的网络可用
                     return true;
                 }
@@ -526,16 +532,17 @@ public class Tools {
     //获取当月第一天 和 当前时间
 
 
-    public   void getFirstDate(TextView v){
+    public void getFirstDate(TextView v) {
         Calendar cal = Calendar.getInstance();
-        SimpleDateFormat datef=new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat datef = new SimpleDateFormat("yyyy-MM-dd");
         //获取当月的第一天
         //当前月的第一天
         cal.set(GregorianCalendar.DAY_OF_MONTH, 1);
-        Date beginTime=cal.getTime();
-        String beginTime1=datef.format(beginTime);
+        Date beginTime = cal.getTime();
+        String beginTime1 = datef.format(beginTime);
         v.setText(beginTime1);
     }
+
     /**
      * 获取现在时间
      *
@@ -549,6 +556,50 @@ public class Tools {
         v.setText(dateString);
     }
 
-
-
+    /**
+     * 隐藏手机中间4位号码
+     * 130****0000
+     *
+     * @param mobile_phone 手机号码
+     * @return 130****0000
+     */
+    public static String hideMobilePhone4(String mobile_phone) {
+        if (mobile_phone.length() != 11) {
+            return "手机号码不正确";
+        }
+        return mobile_phone.substring(0, 3) + "****" + mobile_phone.substring(7, 11);
     }
+
+    /**
+     * 格式化银行卡 加*
+     * 3749 **** **** 330
+     *
+     * @param cardNo 银行卡
+     * @return 3749 **** **** 330
+     */
+    public static String formatCard(String cardNo) {
+        if (cardNo.length() < 8) {
+            return "银行卡号有误";
+        }
+        String card = "";
+        card = cardNo.substring(0, 4) + " **** **** ";
+        card += cardNo.substring(cardNo.length() - 4);
+        return card;
+    }
+
+    /**
+     * 银行卡后四位
+     *
+     * @param cardNo
+     * @return
+     */
+    public static String formatCardEnd4(String cardNo) {
+        if (cardNo.length() < 8) {
+            return "银行卡号有误";
+        }
+        String card = "";
+        card += cardNo.substring(cardNo.length() - 4);
+        return card;
+    }
+
+}
